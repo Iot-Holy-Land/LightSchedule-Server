@@ -10,6 +10,7 @@
 <body>
   <div class="Modal">
     <img src="./assets/Alarm.png" />
+    <audio src="./assets/test.mp3"  autoplay loop controls="controls" ></audio>
     <button onclick="redirectToHomepage()">알람끄기</button>
   </div>
 
@@ -20,7 +21,7 @@
 
     window.addEventListener("DOMContentLoaded", function() {
       var xhr = new XMLHttpRequest();
-      xhr.open("GET", "http://10.150.149.88/BE/send?param1=true", true);
+      xhr.open("GET", "http://10.150.151.103/BE/send?param1=SUCCESS", true);
       xhr.send();
     });
   </script>
