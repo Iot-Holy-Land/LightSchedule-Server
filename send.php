@@ -17,6 +17,10 @@
   <script>
     function redirectToHomepage() {
       window.location.href = "http://localhost:3000/";
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://10.150.151.103/BE/send?param1=OFF", true);
+      xhr.send();
+
     }
 
     window.addEventListener("DOMContentLoaded", function() {
