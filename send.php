@@ -16,16 +16,15 @@
 
   <script>
     function redirectToHomepage() {
-      window.location.href = "http://localhost:3000/";
       var xhr = new XMLHttpRequest();
-      xhr.open("GET", "http://10.150.151.103/BE/send?param1=OFF", true);
+      xhr.open("GET", "http://10.150.149.19/BE/send?&param1=OFF", true);
       xhr.send();
-
+      window.location.href = "http://localhost:3000/";
     }
 
     window.addEventListener("DOMContentLoaded", function() {
       var xhr = new XMLHttpRequest();
-      xhr.open("GET", "http://10.150.151.103/BE/send?param1=SUCCESS", true);
+      xhr.open("GET", "http://10.150.149.19/BE/send?param1=SUCCESS", true);
       xhr.send();
     });
   </script>
