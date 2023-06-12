@@ -15,7 +15,7 @@ $mysqli = new mysqli($host, $user, $pw, $dbName);
 // 쿼리 실행
 $query = "SELECT * FROM lightschedule";
 $result = $mysqli->query($query);
-
+ 
 // 결과 확인
 if ($result) {
     // 결과를 배열로 저장
